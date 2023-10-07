@@ -50,5 +50,5 @@ Here you have the list:
 Keep up the good work! ✌️
 """
 encoded_message = complete_message.encode('utf-8')
-# send_email(encoded_message)
+send_email(encoded_message)
 print(content["articles"][:5])
