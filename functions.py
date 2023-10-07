@@ -1,9 +1,11 @@
 import smtplib as smtp
 import ssl
 import os
+from dotenv import load_dotenv
 
 
 def send_email(message):
+    load_dotenv()
     host = "smtp.gmail.com"
     port = 465
 
