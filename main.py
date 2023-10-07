@@ -4,7 +4,8 @@ import datetime
 from functions import send_email
 
 today_date = datetime.date.today().isoformat()
-topic = "ai"
+
+topic = 'ai'
 url = f"https://newsapi.org/v2/everything?q={topic}&from={today_date}&to={today_date}&sortBy=relevancy&"\
       "apiKey=8c95c9a745c14bcfbece40161e9694ed"
     
