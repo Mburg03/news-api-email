@@ -5,11 +5,11 @@ from functions import send_email
 
 today_date = datetime.date.today().isoformat()
 
-url = f"https://newsapi.org/v2/everything?q=ai&from=2023-10-06&to=2023-10-06&sortBy=relevancy&"\
+url = f"https://newsapi.org/v2/everything?q=ai&from={today_date}&to={today_date}&sortBy=relevancy&"\
       "apiKey=8c95c9a745c14bcfbece40161e9694ed"
     
 my_api_key = "8c95c9a745c14bcfbece40161e9694ed"
-FILEPATH = './text-files/report.txt'
+FILEPATH = './report.txt'
 
 # Make a request
 request = requests.get(url)
@@ -51,4 +51,3 @@ Keep up the good work! ✌️
 """
 encoded_message = complete_message.encode('utf-8')
 send_email(encoded_message)
-print(content["articles"][:5])
