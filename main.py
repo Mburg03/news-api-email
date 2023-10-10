@@ -4,10 +4,15 @@ import datetime
 from functions import send_email
 
 today_date = datetime.date.today().isoformat()
-
+yesterday = datetime.date.today() - datetime.timedelta(days=1)
+yesterday_str = yesterday.strftime("%Y-%m-%d")
+print(yesterday_str)
 topic = 'ai'
-url = f"https://newsapi.org/v2/everything?q={topic}&from={today_date}&to={today_date}&sortBy=relevancy&"\
-      "apiKey=8c95c9a745c14bcfbece40161e9694ed"
+# url = f"https://newsapi.org/v2/everything?q={topic}&from={today_date}&"\
+#       "apiKey=8c95c9a745c14bcfbece40161e9694ed"
+
+url = f"https://newsapi.org/v2/everything?q=ai&from={yesterday_str}&"\
+    "apiKey=8c95c9a745c14bcfbece40161e9694ed"
     
 my_api_key = "8c95c9a745c14bcfbece40161e9694ed"
 FILEPATH = './report.txt'
