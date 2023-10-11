@@ -11,7 +11,7 @@ topic = 'ai'
 # url = f"https://newsapi.org/v2/everything?q={topic}&from={today_date}&"\
 #       "apiKey=8c95c9a745c14bcfbece40161e9694ed"
 
-url = f"https://newsapi.org/v2/everything?q=ai&from={yesterday_str}&"\
+url = f"https://newsapi.org/v2/everything?q=ai&from={yesterday_str}&language=en&"\
     "apiKey=8c95c9a745c14bcfbece40161e9694ed"
     
 my_api_key = "8c95c9a745c14bcfbece40161e9694ed"
