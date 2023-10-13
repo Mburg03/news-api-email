@@ -25,7 +25,7 @@ titles = []
 descriptions = []
 links = []
 
-for article in content["articles"][:20]:
+for article in content["articles"][:12]:
     titles.append(article["title"])
     descriptions.append(article["description"])
     links.append(article["url"])
